@@ -47,6 +47,11 @@ char *read_command(int is_interactive)
 	return (command);
 }
 
+/**
+ * execute_command - This function executes a command.
+ * @args : It takes an array of strings args as input.
+ * REturn : 0
+ */
 void execute_command(char **args)
 {
 	if (args[0] == NULL)
@@ -87,6 +92,11 @@ void execute_command(char **args)
 	}
 }
 
+/**
+ * free_args - This function frees memory allocated for command arguments
+ * @args : It takes array of strings args input and iterates overe array.
+ * Return 0
+ */
 void free_args(char **args)
 {
 	if (args == NULL)
