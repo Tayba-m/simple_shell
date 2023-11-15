@@ -9,6 +9,11 @@
 #define MAX_COMMAND_LENGTH 100
 #define MAX_ARGS 10
 
+/**
+ * read_command - function to read command
+ * @is_interactive : arg
+ * Return: command
+ */
 
 char *read_command(int is_interactive)
 {
@@ -50,7 +55,7 @@ char *read_command(int is_interactive)
 /**
  * execute_command - This function executes a command.
  * @args : It takes an array of strings args as input.
- * REturn : 0
+ * Return : 0
  */
 void execute_command(char **args)
 {
@@ -95,7 +100,7 @@ void execute_command(char **args)
 /**
  * free_args - This function frees memory allocated for command arguments
  * @args : It takes array of strings args input and iterates overe array.
- * Return 0
+ * Return : 0
  */
 void free_args(char **args)
 {

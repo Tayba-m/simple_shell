@@ -9,6 +9,12 @@
 #define MAX_COMMAND_LENGTH 100
 #define MAX_ARGS 10
 
+/**
+ * main - the main function
+ * @void : arg
+ * Return: 0
+ */
+
 int main(void)
 {
 	int is_interactive = isatty(STDIN_FILENO);
