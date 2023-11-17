@@ -48,8 +48,6 @@ void execute_command(char **args, int arg_count, int *exit_status)
 {
     int i;
 
-    if (arg_count > 0)
-    {
         args = realloc(args, (arg_count + 1) * sizeof(char *));
         args[arg_count] = NULL;
         *exit_status = exec_com(args);
@@ -63,5 +61,5 @@ void execute_command(char **args, int arg_count, int *exit_status)
         free(args);
         args = NULL;
         arg_count = 0;
-    }
+
 }
