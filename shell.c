@@ -5,7 +5,7 @@
  *
  * Return: 0
  */
-int main()
+int main(void)
 {
 	exec_shell();
 	return (0);
