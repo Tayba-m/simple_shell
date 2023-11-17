@@ -1,5 +1,5 @@
-#ifndef _HSH_H
-#define _HSH_H
+#ifndef SHELL_H
+#define SHELL_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -17,6 +17,6 @@ extern char **environ;
 int exec_com(char *const args[]);
 void process_input(char *input_str);
 void exec_shell(void);
-int main(int argc, char *argv[]);
+int main(void);
 
 #endif

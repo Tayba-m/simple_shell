@@ -1,4 +1,4 @@
-#include "hsh.h"
+#include "shell.h"
 
 /**
  * exec_com - function to execute command

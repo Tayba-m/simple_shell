@@ -1,11 +1,11 @@
-#include "hsh.h"
+#include "shell.h"
 
 /**
  * main - function main
  *
  * Return: 0
  */
-int main(int argc, char *argv[])
+int main()
 {
 	exec_shell();
 	return (0);
