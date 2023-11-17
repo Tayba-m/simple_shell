@@ -15,7 +15,7 @@ int exec_com(char *const args[])
 	if (pid == -1)
 	{
 		perror("fork");
-		return -1;
+		return (-1);
 	}
 	else if (pid == 0)
 	{

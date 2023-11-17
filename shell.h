@@ -9,6 +9,8 @@
 #include <sys/wait.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+#include <stdlib.h>
+
 
 #define MAX_PATH 1024
 
@@ -16,6 +18,7 @@ extern char **environ;
 
 int exec_com(char *const args[]);
 void process_input(char *input_str);
+void execute_command(char **args, int arg_count, int *exit_status);
 void exec_shell(void);
 int main(void);
 
